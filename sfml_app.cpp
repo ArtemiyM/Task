@@ -35,18 +35,18 @@ int main()
 	circle.setOutlineColor(Color(80, 220, 50)); 
 	circle.move(15, 15); 
 
-	//создание круга2 как объекта
+	//СЃРѕР·РґР°РЅРёРµ РєСЂСѓРіР°2 РєР°Рє РѕР±СЉРµРєС‚Р°
 	geometryObj circle1;
 	circle1.octa.setFillColor(Color::Magenta);
 	
 
-	// Создаем треугольник
+	// РЎРѕР·РґР°РµРј С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 	CircleShape triangle(65.f, 3);
 	triangle.setPosition(125, 15); 
 	triangle.setFillColor(Color::Blue); 
 
 
-	// Создаем квадрат
+	// РЎРѕР·РґР°РµРј РєРІР°РґСЂР°С‚
 	CircleShape square(60.f, 4);
 	square.setPosition(250, 15);
 	square.setFillColor(Color::Red); 
@@ -60,7 +60,7 @@ int main()
 	while (window.isOpen())
 	{
 		Vector2i mousePos = Mouse::getPosition(window);
-		// Обрабатываем очередь событий в цикле
+		// РћР±СЂР°Р±Р°С‚С‹РІР°РµРј РѕС‡РµСЂРµРґСЊ СЃРѕР±С‹С‚РёР№ РІ С†РёРєР»Рµ
 		Event event;
 		while (window.pollEvent(event))
 		{
@@ -96,7 +96,7 @@ int main()
 			if (ismove == true) {
 				circle.setPosition(mousePos.x, mousePos.y);
 			}
-			// Отрисовка окна
+			// РћС‚СЂРёСЃРѕРІРєР° РѕРєРЅР°
 			window.clear(Cap);
 			circle1.draw(&window);
 			window.draw(circle);
