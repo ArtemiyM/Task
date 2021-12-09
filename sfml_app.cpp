@@ -35,7 +35,6 @@ int main()
 	circle.setOutlineColor(Color(80, 220, 50)); 
 	circle.move(15, 15); 
 
-	//создание круга2 как объекта
 	geometryObj circle1;
 	circle1.octa.setFillColor(Color::Magenta);
 	
